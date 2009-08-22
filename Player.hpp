@@ -1,6 +1,10 @@
 #ifndef PLAYER
 #define PLAYER
 
+#include <cstdlib> 
+
+using namespace std;
+
 /* ****************************************************************************************************** */
 class Player{                   // Contains all player Information
 	public:

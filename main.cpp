@@ -21,9 +21,10 @@
 
 #include <iostream>
 
-#include "GameMaster.hpp"
+#include "main.hpp"
 #include "Player.hpp"
-#include "GameplayOpt-002.hpp"
+#include "GameMaster.hpp"
+#include "GameplayOpt-002.hpp"          // This is old proc code; we're trying to get rid of it.
 
 using namespace std;
 
@@ -117,6 +118,8 @@ int main(){
 	Player Player1, Player2;
 	Player1.playername = "Aunt Jemima";
 	Player2.playername = "Uncle Phil";
+	
+	GameMaster GameMasterObj(&Player1, &Player2);                       // Create the GameMaster object and pass it the addresses of the player objects
 	
 	bool gameOver = false;
 	while(!gameOver){
